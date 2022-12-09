@@ -26,7 +26,7 @@ namespace QuestAppLauncher
 
         // Download repos
         public const string DownloadRepo_Type_GitHub = "github";
-        public const string DownloadRepo_Default = @"tverona1/QuestAppLauncher_Assets/releases/latest";
+        public const string DownloadRepo_Default = @"hooverhigh/QuestAppLauncher_Assets/releases/latest";
 
         // Background
         public const string Background_Default = "default";
