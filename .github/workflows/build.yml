@@ -43,9 +43,15 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           targetPlatform: Android
+          allowDirtyBuild: true
 
       # Output
       - uses: actions/upload-artifact@v2
         with:
           name: Build
           path: build
+      
+      # Return License
+      - name: Return license
+        uses: game-ci/unity-return-license@v2
+        if: always()
