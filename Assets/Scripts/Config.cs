@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -30,7 +30,7 @@ namespace QuestAppLauncher
         public const string DownloadRepo_Default = @"hooverhigh/QuestAppLauncher_Assets/releases/latest";
 
         // Background
-        public const string Background_Default = "background.png";
+        public const string Background_Default = "background.jpg";
 
         /// <summary>
         /// Grid size
@@ -62,7 +62,7 @@ namespace QuestAppLauncher
         public bool show2D = true;
 
         // Auto Category: Apps are automatically categorized into 3 tabs - Quest, Go/GearVr, 2D
-        public string autoCategory = Category_Top;
+        public string autoCategory = Category_Off;
 
         // Custom Category: Apps are categorized according to appnames.txt file
         public string customCategory = Category_Right;
