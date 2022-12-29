@@ -187,9 +187,9 @@ namespace QuestAppLauncher
             var configRepos = new HashSet<string>();
             foreach (var item in config.downloadRepos)
             {
-                if (null == item.type || !string.Equals(item.type, Config.DownloadRepo_Type_GitHub, StringComparison.OrdinalIgnoreCase))
+                if (null == item.type || !string.Equals(item.type, Config.DownloadRepo_Type_GitHub, StringComparison.OrdinalIgnoreCase) || !string.Equals(item.type, Config.DownloadRepo_Type_PrivUrl, StringComparison.OrdinalIgnoreCase))
                 {
-                    // For now, we only support GitHub repos
+                    // For now, we only support GitHub repos, or our private update url
                     continue;
                 }
 

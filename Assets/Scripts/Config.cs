@@ -26,10 +26,11 @@ namespace QuestAppLauncher
 
         // Download repos
         public const string DownloadRepo_Type_GitHub = "github";
+        public const string DownloadRepo_Type_PrivUrl = "hhsupserver";
         public const string DownloadRepo_Default = @"hooverhigh/QuestAppLauncher_Assets/releases/latest";
 
         // Background
-        public const string Background_Default = "default";
+        public const string Background_Default = "background.png";
 
         /// <summary>
         /// Grid size
@@ -37,8 +38,8 @@ namespace QuestAppLauncher
         [Serializable]
         public class GridSize
         {
-            public int rows = 3;
-            public int cols = 3;
+            public int rows = 4;
+            public int cols = 4;
         }
 
         /// <summary>
