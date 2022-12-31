@@ -32,9 +32,6 @@ namespace QuestAppLauncher
         const string GithubApiUrl = @"http://api.github.com/";
         
         const bool isorg = true;
-        if (isorg == true) {
-          GithubApiUrl = GithubApiUrl + "orgs/";
-        }
 
         // Rate limit in minutes
         const int RateLimitInMins = 5;
@@ -299,6 +296,9 @@ namespace QuestAppLauncher
         private async Task<bool> GetAssetsInfoFromGithubRepoAsync(string repoUri,
             Dictionary<string, AssetInfo> assetsInfo, IDownloadProgress downloadProgress = null)
         {
+            if (isorg == true) {
+                GithubApiUrl = GithubApiUrl + "orgs/";
+            }
             var requestUrl = GithubApiUrl + repoUri;
             Debug.LogFormat("Reading assets from {0}", requestUrl);
 
