@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -31,7 +31,7 @@ namespace QuestAppLauncher
         // GitHub API url
         const string GithubApiUrl = @"http://api.github.com/";
         
-        const isorg = true;
+        const bool isorg = true;
         if (isorg == true) {
           GithubApiUrl = GithubApiUrl + "orgs/";
         }
