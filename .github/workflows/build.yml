@@ -45,6 +45,7 @@ jobs:
         with:
           targetPlatform: Android
           allowDirtyBuild: true
+          buildName: "HooverHighQuestAppLauncher"
 
       # Output
       - name: Upload build
