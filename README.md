@@ -1,5 +1,7 @@
 # Quest App Launcher
 
+[![Build](https://github.com/HooverHigh/QuestAppLauncher/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/HooverHigh/QuestAppLauncher/actions/workflows/build.yml)
+
 An app launcher for hoover high Oculus Quests, implemented in Unity.
 
 ## Source structure:
