@@ -29,9 +29,9 @@ namespace QuestAppLauncher
         const string TempDownloadFileExtention = ".tmp_download";
 
         // GitHub API url
-        string GithubApiUrl = @"http://api.github.com/";
+        public string GithubApiUrl = @"http://api.github.com/";
         
-        string isorg = true;
+        public bool isorg = true;
 
         // Rate limit in minutes
         const int RateLimitInMins = 5;
