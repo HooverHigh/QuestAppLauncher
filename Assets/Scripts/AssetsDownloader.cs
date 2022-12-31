@@ -29,9 +29,9 @@ namespace QuestAppLauncher
         const string TempDownloadFileExtention = ".tmp_download";
 
         // GitHub API url
-        const string GithubApiUrl = @"http://api.github.com/";
+        var string GithubApiUrl = @"http://api.github.com/";
         
-        const bool isorg = true;
+        var bool isorg = true;
 
         // Rate limit in minutes
         const int RateLimitInMins = 5;
@@ -297,7 +297,7 @@ namespace QuestAppLauncher
             Dictionary<string, AssetInfo> assetsInfo, IDownloadProgress downloadProgress = null)
         {
             if (isorg == true) {
-                GithubApiUrl = GithubApiUrl + "orgs/";
+                var string GithubApiUrl = GithubApiUrl + "orgs/";
             }
             var requestUrl = GithubApiUrl + repoUri;
             Debug.LogFormat("Reading assets from {0}", requestUrl);
