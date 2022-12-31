@@ -297,7 +297,7 @@ namespace QuestAppLauncher
             Dictionary<string, AssetInfo> assetsInfo, IDownloadProgress downloadProgress = null)
         {
             if (isorg == true) {
-                var string GithubApiUrl = GithubApiUrl + "orgs/";
+                var GithubApiUrl = GithubApiUrl + "orgs/";
             }
             var requestUrl = GithubApiUrl + repoUri;
             Debug.LogFormat("Reading assets from {0}", requestUrl);
