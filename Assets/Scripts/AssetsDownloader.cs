@@ -33,6 +33,8 @@ namespace QuestAppLauncher
         
         // If Github account is a org set this to true
         public bool isorg = true;
+        
+        public string GithubUrl = "";
 
         // Rate limit in minutes
         const int RateLimitInMins = 5;
