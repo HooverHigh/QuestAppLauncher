@@ -31,6 +31,7 @@ namespace QuestAppLauncher
         // GitHub API url
         const string GithubApiUrl = @"http://api.github.com/";
         
+        // If Github account is a org set this to true
         public bool isorg = true;
 
         // Rate limit in minutes
@@ -297,9 +298,9 @@ namespace QuestAppLauncher
             Dictionary<string, AssetInfo> assetsInfo, IDownloadProgress downloadProgress = null)
         {
             if (isorg == true) {
-                var GithubUrl = GithubApiUrl + "orgs/";
+                GithubUrl = GithubApiUrl + "orgs/";
             } else {
-                var GithubUrl = GithubApiUrl;
+                GithubUrl = GithubApiUrl;
             }
             var requestUrl = GithubUrl + repoUri;
             Debug.LogFormat("Reading assets from {0}", requestUrl);
