@@ -33,6 +33,7 @@ jobs:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
+        if: ${{ github.ref_name == 'master' }}
 
       # Build
       - name: Build project
