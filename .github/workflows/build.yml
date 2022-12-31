@@ -2,9 +2,9 @@ name: Build
 
 on:
   push:
-    branches: [ "master", "dev" ]
+    branches: [ "dev" ]
   pull_request:
-    branches: [ "master", "dev" ]
+    branches: [ "dev" ]
   workflow_dispatch: {}
 
 jobs:
@@ -56,7 +56,7 @@ jobs:
       # Upload dir
       - uses: actions/upload-artifact@v2
         with:
-          name: Build
+          name: Build-dev
           path: build
       
       # Return License
