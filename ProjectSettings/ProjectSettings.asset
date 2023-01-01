@@ -165,8 +165,8 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: aaa.QuestAppLauncher.App
-    Standalone: com.DefaultCompany.QuestAppLauncher
+    Android: HooverHigh.QuestAppLauncher
+    Standalone: com.HooverHigh.QuestAppLauncher
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 25
