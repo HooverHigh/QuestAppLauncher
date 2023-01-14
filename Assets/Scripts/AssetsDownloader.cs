@@ -14,7 +14,9 @@ using Newtonsoft.Json.Linq;
 
 namespace QuestAppLauncher
 {
-    private bool installApp(string apkPath)
+    public class InstallAPK
+    {
+        private bool installApp(string apkPath)
 {
     bool success = true;
     //GameObject.Find("TextDebug").GetComponent<Text>().text = "Installing App";
@@ -60,6 +62,7 @@ namespace QuestAppLauncher
 
     return success;
 }
+    }
     /// <summary>
     /// Downloads assets (app icons packs and names files) from configured repos.
     /// </summary>
